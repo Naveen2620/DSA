@@ -1,3 +1,26 @@
+/*
+
+Example 1:
+Input:
+ s = "((()))"
+Output:
+ "(())"
+Explanation:
+ The input string is a single primitive: "((()))".
+Removing the outermost layer yields: "(())".
+
+Example 2:
+Input:
+ s = "()(()())(())"
+Output:
+ "(()())()"
+Explanation:
+ Primitive decomposition: "()" + "(()())" + "(())"
+After removing outermost parentheses: "" + "()()" + "()"
+Final result: "(()())()".
+
+*/
+
 public class LT_1021_Remove_Outermost_Parentheses {
 
     static String removeOuterParentheses(String s){
@@ -30,3 +53,6 @@ public class LT_1021_Remove_Outermost_Parentheses {
         System.out.println(answer);
     }
 }
+
+
+
